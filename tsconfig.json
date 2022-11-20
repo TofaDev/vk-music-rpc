@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
-
-    "target": "es2016",
-
+    
     /* Modules */
-    "module": "commonjs",
-    "rootDir": "./src",
-  
-    /* Emit */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
     "outDir": "./dist",
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
 
     /* Type Checking */
     "strict": true,
-
     /* Completeness */
     "skipLibCheck": true
   }
