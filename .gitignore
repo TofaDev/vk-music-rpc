@@ -1,7 +1,3 @@
-#configuration file
-
-dist/config.json
-
 #dist
 releases
 `
