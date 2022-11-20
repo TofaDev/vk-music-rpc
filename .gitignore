@@ -1,10 +1,3 @@
-#dist
-releases
-`
-#vscode
-
-.vscode
-`
 # Logs
 logs
 *.log
