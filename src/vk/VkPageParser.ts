@@ -43,7 +43,7 @@ export class VkPageParser {
             
             
         } catch (e) {
-            Logger.log(`Ошибка при получении текущей песни с ВКонтакте`)
+            Logger.log(`Ошибка при получении текущей песни с ВКонтакте`, ConsoleColor.RED)
             return null
             
         }
