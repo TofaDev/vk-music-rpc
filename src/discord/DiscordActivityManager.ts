@@ -30,11 +30,14 @@ export class DiscordActivityManager {
     }
 
     private async updateActivity(): Promise<void> {
+
         const song = await this.vkParser.getCurrentSong()
         
         if(song != null) {
             
             const songText = `${song.artist} - ${song.songName}`
+
+            if (songText.length >= 128) return
 
             if(songText != this.currentSongPlayed) {
                 this.currentSongPlayed = songText
