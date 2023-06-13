@@ -3,11 +3,11 @@
 
 Как это выглядит:
 
-![Когда музыка играет в ВК](https://files.tofahome.space/api/download/github_music_played.png)
+![Когда музыка играет в ВК](https://files.tofadevel.ru/api/files/download/when_playing.png)
 
 Когда музыка не играет:
 
-![Когда музыка не играет в ВК](https://files.tofahome.space/api/download/github_music_not_played.png)
+![Когда музыка не играет в ВК](https://files.tofadevel.ru/api/files/download/when_not_playing.png)
 
 Все сообщения конфигурируются в файле который создается после запуска программы
 
@@ -19,9 +19,15 @@
 
 настройки -> конфидециальность -> отображать текущую активность в игре
 
-<h1>Скачать программу</h1>
+<h1>Установка</h1>
 
-Программа для Linux, Windows, iOS можно скачать на странице релизов: https://github.com/TofaDev/vk-music-rpc/releases/tag/release
+Первым делом, если у Вас не установлен Tampermonkey - его необходимо установить
+
+Даллее, Вам нужно установить этот скрипт: [УСТАНОВИТЬ](https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js)
+
+На этом всё, далее нужно скачать саму программу и запустить её, вы прекрасны.
+
+Программа доступна для Linux, Windows, iOS можно скачать на странице релизов: https://github.com/TofaDev/vk-music-rpc/releases/tag/release
 
 <h1>Самостоятельная сборка</h1>
 
