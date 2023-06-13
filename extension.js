@@ -4,8 +4,8 @@
 // @version      1.0.0
 // @description  This extension is a hook for the vk-discord-rpc project on github
 // @author       TofaDev
-// @updateURL    https://raw.githubusercontent.com/TofaDev/vk-music-rpc/master/extension.js
-// @downloadURL  https://raw.githubusercontent.com/TofaDev/vk-music-rpc/master/extension.js
+// @updateURL    https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js
+// @downloadURL  https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js
 // @match        https://vk.com/feed
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=vk.com
 // @grant        GM_getValue
