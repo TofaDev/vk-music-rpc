@@ -1,8 +1,8 @@
 import fse from "fs-extra"
-import { Promt } from "../cli/Promt"
-import { ConsoleColor } from "../enum/ConsoleColor"
-import { IConfiguration } from "../interface/IConfiguration"
-import { Logger } from "../utils/Logger"
+import {Promt} from "../cli/Promt"
+import {ConsoleColor} from "../enum/ConsoleColor"
+import {IConfiguration} from "../interface/IConfiguration"
+import {Logger} from "../utils/Logger"
 
 export default class Config {
 
@@ -42,10 +42,9 @@ export default class Config {
     if(this.exists()) return this.setRawConfig()
     
     let config: IConfiguration = {
-        clientId: null,
+        clientId: "1043146504606597142",
         debug: null,
-        userPage: null,
-        updateFrequency: null,
+        websocketPort: 8112,
         discordButtons: [
             {
                 label: "Разработчик",
@@ -69,33 +68,14 @@ export default class Config {
         }
     }
 
-    const getUserPage = await promt.askUser({
-        question: "Введите ссылку на страницу вк, куда транслируется музыка (личная страница/паблик)",
-        requiredAnswerType: "string"
-    })
-
-    config.userPage = getUserPage
-
-    const getUpdateFrequency = await promt.askUser({
-        question: "Введите частоту обновления текущего трека (в секундах, не рекомендуется ставить меньше 5)",
-        requiredAnswerType: "number"
-    })
-
-
-    config.updateFrequency = getUpdateFrequency * 1000
-
-    config.discordButtons.push({
-        label: "Моя страница ВКонтакте",
-        url: getUserPage
-    })
-
     config.debug = false
-    config.clientId = "1043146504606597142"
 
     this.create(config)
 
-    Logger.log(`Конфигурация программы создана по пути: ${this.getConfigPath()} \n. Вы можете вручную его отредактировать, либо удалить чтобы пройти процедуру настройки снова`,
-     ConsoleColor.GREEN)
+       Logger.log(`Конфигурация программы создана по пути: ${this.getConfigPath()} \n. Вы можете вручную его отредактировать, либо удалить чтобы пройти процедуру настройки снова`,
+      ConsoleColor.GREEN)
+        Logger.log(`Обращаю ваше внимание на то, что программа потерпела серьезные изменения на новой версии 1.0.0, поэтому для её работы требуется установить расширение. Подробную инструкцию Вы можете найти на странице проекта`,
+       ConsoleColor.YELLOW)
 
     this.rawConfig = config
     }
