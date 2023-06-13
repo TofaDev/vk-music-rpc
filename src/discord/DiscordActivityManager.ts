@@ -1,8 +1,9 @@
-import { ConsoleColor } from "../enum/ConsoleColor";
-import { IConfiguration } from "../interface/IConfiguration";
-import { Logger } from "../utils/Logger";
-import { VkPageParser } from "../vk/VkPageParser";
-import { DiscordRPC } from "./DiscordRPC";
+import {ConsoleColor} from "../enum/ConsoleColor";
+import {IConfiguration} from "../interface/IConfiguration";
+import {Logger} from "../utils/Logger";
+import {DiscordRPC} from "./DiscordRPC";
+import {SongStatus} from "../enum/SongStatus";
+import {ISong} from "../interface/ISong";
 
 export class DiscordActivityManager {
 
@@ -13,6 +14,7 @@ export class DiscordActivityManager {
 
         this.discordRPC = discordRPC
     }
+    public updateActivity(songStatus: SongStatus, song?: ISong): void {
 
         if(song != null && songStatus == SongStatus.PLAYING) {
             
