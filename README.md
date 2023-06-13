@@ -21,7 +21,7 @@
 
 <h1>Установка</h1>
 
-Первым делом, если у Вас не установлен Tampermonkey - его необходимо установить
+Первым делом, если у Вас не установлен [Tampermonkey](https://www.tampermonkey.net/) - его необходимо установить длля вашего браузера
 
 Даллее, Вам нужно установить этот скрипт: [УСТАНОВИТЬ](https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js)
 
