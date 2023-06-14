@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Vk Music RPC hook
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  This extension is a hook for the vk-discord-rpc project on github
 // @author       TofaDev
 // @updateURL    https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js
 // @downloadURL  https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js
-// @match        https://vk.com/feed
+// @match        *://vk.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=vk.com
 // @grant        GM_getValue
 // @grant        GM_setValue
@@ -30,7 +30,7 @@ const musicIsPlaying = (musicPlayer) => {
 
 let serverUrl = GM_getValue('serverUrl', 'ws://localhost:8112');
 
-GM_registerMenuCommand('Установить адрес websocket сервера', function() {
+GM_registerMenuCommand('Установить адрес websocket сервера', () => {
     let url = prompt('Введите адрес для вебсокет сервера в формате: ws://host:port', serverUrl);
     if (url) {
         serverUrl = url;
