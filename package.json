@@ -26,7 +26,8 @@
     "@types/fs-extra": "^9.0.13",
     "@types/node-fetch": "^2.6.2",
     "@types/prompt": "^1.1.4",
-    "@types/request-promise": "^4.1.48"
+    "@types/request-promise": "^4.1.48",
+    "pkg": "^5.8.1"
   },
   "pkg": {
     "outputPath": "releases",
