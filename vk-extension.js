@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vk Music RPC hook
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  This extension is a hook for the vk-discord-rpc project on github
 // @author       TofaDev
 // @updateURL    https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/vk-extension.js
