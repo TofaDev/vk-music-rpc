@@ -23,7 +23,10 @@
 
 Первым делом, если у Вас не установлен [Tampermonkey](https://www.tampermonkey.net/) - его необходимо установить длля вашего браузера
 
-Даллее, Вам нужно установить этот скрипт: [УСТАНОВИТЬ](https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/extension.js)
+Даллее, Вам нужно установить скрипт:
+
+- [Версия для Вконтакте](https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/vk-extension.js)
+- [Версия для Я. Музыки](https://raw.githubusercontent.com/TofaDev/vk-music-rpc/main/yandex-extension.js)
 
 На этом всё, далее нужно скачать саму программу и запустить её, вы прекрасны.
 
@@ -34,7 +37,6 @@
 <h2>Зависимости:</h2>
 
 Node js версии 16
-
 
 <h2>Инструкция:</h2>
 
