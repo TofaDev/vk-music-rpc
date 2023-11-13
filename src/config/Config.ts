@@ -50,8 +50,8 @@ export default class Config {
       ],
       activity: {
         images: {
-          largeImageKey: "vk_compact_logo",
-          smallImageKey: "vk_compact_logo",
+          largeImageKey: "merged_vk_yandex_logo",
+          smallImageKey: "merged_vk_yandex_logo",
         },
         text: {
           firstLine: "В данный момент музыка",
