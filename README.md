@@ -1,3 +1,5 @@
+[![Github All Releases](https://img.shields.io/github/downloads/TofaDev/vk-music-rpc/total.svg)]()![GitHub last commit (branch)](https://img.shields.io/github/last-commit/TofaDev/vk-music-rpc/main)
+
 <h1>Описание</h1>
 Программа позволяет транслировать музыку которую вы слушаете ВКонтакте в дискорд
 
